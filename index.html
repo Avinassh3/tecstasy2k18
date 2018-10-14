@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Tecstasy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+.bgimg {
+    background-image: url('images/background.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right:0;
+}
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+</style>
+    </head>
+<body class="bgimg">
+
+<div class="container">
+  <div class="topleft">
+      <center>
+          <a href="about/about.html"><h1 style="color: antiquewhite; font-size: 65px;">Tecstasy<h4 style="color: antiquewhite; font-family: monospace">2K18-28<sup>th</sup> & 29<sup>th</sup> sep </h4></h1></a>
+      </center>
+  </div>
+  <div class="middle">
+      <br><br>
+    <h2 id="rem">COMING SOON</h2>
+    <hr id="remM">
+      <h1><p id="demo"></p></h1>
+      <br>
+    
+      <a class="btn btn-danger" style="background-color:#fc1616; "  href="main.html"> <h4>     Explore        </h4></a>
+      <a class="btn btn-danger" style="background-color:#fc1616;" href="https://goo.gl/forms/YYvGqDmTmHwJAW5C2"><h4>Campus Ambassador</h4></a>
+      <br>
+      <br>
+      <br>
+      
+  
+    <footer class="container-fluid text-center">
+      <center>
+          <a  href="develop/aboutus.html">
+     <h5 style="color :antiquewhite; left:0; right: 0; font-size:18px; ">Developed By Satish,Sushanth,Avinassh,vamsi
+         <br> 3/4 IT CBIT</h5></a></center></footer></div>
+</div>
+</body>
+    <script>
+    // Set the date we're counting down to
+var countDownDate = new Date("sept 27, 2018 23:59:59").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("rem").innerHTML = "";
+        document.getElementById("remM").innerHTML = "";
+        document.getElementById("demo").innerHTML = "The Fun Begins";
+    }
+}, 1000);
+    
+    
+    
+    
+    </script>
+</html>
